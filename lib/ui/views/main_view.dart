@@ -17,7 +17,7 @@ class _MyHomePageState extends State<MyHomePage> {
       drinkController;
   FixedExtentScrollController pickerController;
   int numberOfCategories = 4;
-  int numberOfPages = 6;
+  int numberOfPages = 5;
   double viewportFraction = 0.9;
   double transition = 30;
   double bottomPosition = 50;
@@ -68,8 +68,8 @@ class _MyHomePageState extends State<MyHomePage> {
       diff = 30.0;
     }
     double resultDiff = 1 - 2 * (diff - 0.5).abs();
-    transition = Curves.slowMiddle.transform(resultDiff) * 100 + 30;
-    scale = Curves.ease.transform(resultDiff) * .8 + 1.0;
+    transition = Curves.easeOutCubic.transform(resultDiff) * 150 + 30;
+    scale = Curves.easeOutCubic.transform(resultDiff) * 1 + 1.0;
     bottomPosition = -Curves.ease.transform(resultDiff) * 300 + 50;
   }
 
@@ -228,32 +228,6 @@ class _MyHomePageState extends State<MyHomePage> {
                   );
                 return SizedBox();
               },
-            ),
-            Positioned(
-              bottom: 250,
-              left: 0,
-              right: 0,
-              child: Text(
-                'Margaritta',
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontSize: 40,
-                  color: Colors.white,
-                ),
-              ),
-            ),
-            Positioned(
-              bottom: 190,
-              left: 0,
-              right: 0,
-              child: Text(
-                '12.0 \$',
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontSize: 40,
-                  color: Colors.white,
-                ),
-              ),
             ),
             Positioned(
               top: 35,

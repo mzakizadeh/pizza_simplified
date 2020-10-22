@@ -44,12 +44,12 @@ class _PlateListTileState extends State<PlateListTile>
   Widget build(BuildContext context) {
     double diff;
     if (widget.controller.position.haveDimensions) {
-      if (widget.index == 0 && widget.controller.page % 6 > 1)
-        diff = ((widget.controller.page % 6) - 6).clamp(-1.0, 1.0);
+      if (widget.index == 0 && widget.controller.page % 5 > 1)
+        diff = ((widget.controller.page % 5) - 5).clamp(-1.0, 1.0);
       else
-        diff = ((widget.controller.page % 6) - widget.index).clamp(-1.0, 1.0);
+        diff = ((widget.controller.page % 5) - widget.index).clamp(-1.0, 1.0);
     } else {
-      diff = widget.index == (widget.initialPage % 6) ? 0.0 : 1.0;
+      diff = widget.index == (widget.initialPage % 5) ? 0.0 : 1.0;
     }
     double absDiff = diff < 0 ? diff * -1 : diff;
 
