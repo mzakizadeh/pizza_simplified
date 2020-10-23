@@ -8,3 +8,5 @@ Don't forget to star⭐ the repo if you like what you see.
 ## Final Result
 
 <img width="248" height="512" src="https://media0.giphy.com/media/UKHaRAGoNRpOclAmL3/giphy.gif">
+
+<img align="right" height="512" src="https://cdn.dribbble.com/users/467044/screenshots/3072192/pizza_simplified.gif">
